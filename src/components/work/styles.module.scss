@@ -1,0 +1,191 @@
+@import '../../assets/vars/vars';
+@import '../../assets/vars/media';
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 104px 0 100px;
+
+  @include media-breakpoint-down(lg) {
+    margin: 50px 0;
+  }
+}
+
+.title {
+  font-family: 'Bebas Neue';
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: 5px;
+  background: linear-gradient(180deg, $light-blue 0%, rgba(0, 78, 134, 0.8) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 36px;
+
+  @include media-breakpoint-down(md) {
+    font-size: 55px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    font-size: 40px;
+  }
+}
+
+.subtitle {
+  max-width: 503px;
+  font-family: 'Gilroy';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: $gray;
+}
+
+.workBox {
+  display: flex;
+
+  @include media-breakpoint-down(xl) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.workImg {
+  width: 960px;
+  height: 441px;
+  background: url("../../assets/images/logoWork.png") center;
+}
+
+.workInfo {
+  width: 960px;
+  height: 441px;
+  background: $dark-white;
+  padding: 80px 70px;
+
+  @include media-breakpoint-down(md) {
+    padding: 40px 20px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: 500px;
+  }
+}
+
+.workInfoStep {
+  max-width: 460px;
+}
+
+.workInfoTitle {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+  color: $light-black;
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+}
+
+.workInfoTitle span {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $light-black;
+  background: $yellow;
+  margin-right: 20px;
+  padding: 4px 10px;
+}
+
+.workInfoSubtitle {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  color: $dark-grey;
+  opacity: 0.7;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 14px;
+  }
+}
+
+.workInfoStepSecond {
+  display: flex;
+  margin-top: 15px;
+
+  @include media-breakpoint-down(xl) {
+    justify-content: center;
+  }
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.workInfoCircle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: $white;
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.workInfoImg {
+  background: url("../../assets/images/circleImg.png");
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.workInfoTextTitle {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  color: $gray;
+  opacity: 0.7;
+  margin-bottom: 21px;
+  max-width: 380px;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 30px;
+    font-size: 10px;
+  }
+}
+
+.workInfoTextSubtitle {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  color: $light-black;
+  opacity: 0.7;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 10px;
+  }
+}
+
+.workInfoText {
+  margin-left: 30px;
+}

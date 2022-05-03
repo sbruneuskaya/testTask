@@ -1,0 +1,153 @@
+@import '../../assets/vars/vars';
+@import '../../assets/vars/media';
+
+.wrapper {
+  display: flex;
+
+  @include media-breakpoint-down(xl) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.wrapperDescription {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include media-breakpoint-down(xl) {
+    width: 100%;
+  }
+}
+
+.wrapperText {
+  max-width: 460px;
+
+  @include media-breakpoint-down(xl) {
+    padding: 136px 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 50px 0;
+  }
+}
+
+.wrapperTitle {
+  font-family: 'Gilroy';
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -0.5px;
+  color: $light-black;
+  margin-bottom: 50px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+.wrapperSubtitle {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  color: $light-grey;
+  opacity: 0.7;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 5px;
+  }
+}
+
+.wrapperBenefits {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $dark-white;
+  padding: 136px 0;
+
+  @include media-breakpoint-down(xl) {
+    width: 100%;
+  }
+}
+
+.wrapperBenefitsTitle {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+  color: $light-black;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+.wrapperBenefitsDescription {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  color: $dark-grey;
+  opacity: 0.7;
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 15px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 5px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.wrapperBenefitsImg {
+  width: 30px;
+  height: 30px;
+  background: url("../../assets/images/iconPoint.png");
+  margin-right: 20px;
+}
+
+.wrapperBenefitsDescription:nth-child(1) {
+  margin-top: 24px;
+}
+
+.containerImg {
+  width: 300px;
+  height: 295px;
+  background: url("../../assets/images/benefitsImg.png") no-repeat center;
+  background-size: contain;
+  position: absolute;
+  top: 20%;
+  left: 42%;
+
+  @include media-breakpoint-down(xl) {
+    width: 200px;
+    height: 195px;
+    top: 45%;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 120px;
+    height: 120px;
+    top: 38%;
+  }
+}
+
+.container {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+}
