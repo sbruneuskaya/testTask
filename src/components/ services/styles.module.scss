@@ -17,12 +17,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1085px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .title {
-  font-family: 'Bebas Neue';
+  font-family: 'Bebas Neue', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 16px;
@@ -31,7 +31,7 @@
 }
 
 .subtitle {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy', sans-serif;
   font-weight: 800;
   font-size: 32px;
   line-height: 42px;
