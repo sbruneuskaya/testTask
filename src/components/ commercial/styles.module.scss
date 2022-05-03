@@ -1,0 +1,240 @@
+@import '../../assets/vars/vars';
+@import '../../assets/vars/media';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background: url("../../assets/images/bgCommercial.png") no-repeat;
+  max-width: 1920px;
+  height: 768px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-size: cover;
+  padding: 208px 250px 60px;
+  margin-top: -92px;
+
+  @media screen and (max-width: 1700px) {
+    padding: 208px 120px 60px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 130px 25px 60px;
+    height: 100%;
+  }
+}
+
+.info {
+  display: flex;
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+  }
+}
+
+.infoTitle {
+  font-family: 'Gilroy';
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 51px;
+  letter-spacing: -0.5px;
+  color: $white;
+  margin-bottom: 38px;
+  max-width: 580px;
+  margin-right: 260px;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 25px;
+    margin-right: 50px;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 25px;
+    margin-right: 0;
+    text-align: left;
+  }
+}
+
+.infoSubtitle {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  color: $white;
+  opacity: 0.7;
+  max-width: 377px;
+
+  @include media-breakpoint-down(md) {
+    max-width: 100%;
+    text-align: left;
+  }
+}
+
+.infoButtonGet {
+  width: 340px;
+  height: 70px;
+  background: $yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+
+  @include media-breakpoint-down(md) {
+    width: 260px;
+  }
+}
+
+.infoButtonText {
+  font-family: 'Gilroy';
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $black;
+  margin-left: 12px;
+
+}
+
+.infoButtonImg {
+  background: url("../../assets/images/download.png") no-repeat;
+  width: 12px;
+  height: 12px;
+}
+
+.infoButtonDescription {
+  max-width: 340px;
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: $white;
+
+  @include media-breakpoint-down(md) {
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.pointsItems {
+  display: flex;
+  max-width: 1020px;
+  justify-content: space-between;
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+  }
+}
+
+.points,
+.pointsItem {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  max-width: 1420px;
+  width: 100%;
+
+  @include media-breakpoint-down(md) {
+    justify-content: center;
+  }
+}
+
+.pointsItemImg {
+  width: 84px;
+  height: 47px;
+  margin-right: 30px;
+  background-position: center;
+
+  @include media-breakpoint-down(sm) {
+    margin-right: 5px;
+  }
+}
+
+.pointsItem:nth-child(1) .pointsItemImg {
+  background: url("../../assets/images/number1.png") no-repeat;
+  background-size: contain;
+}
+
+.pointsItem:nth-child(2) .pointsItemImg {
+  background: url("../../assets/images/number2.png") no-repeat;
+  background-size: contain;
+}
+
+.pointsItem:nth-child(3) .pointsItemImg {
+  background: url("../../assets/images/number3.png") no-repeat;
+  background-size: contain;
+}
+
+.pointsItem:nth-child(2) {
+  margin-left: 100px;
+  margin-right: 100px;
+
+  @include media-breakpoint-down(xl) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-left: 35px;
+  }
+}
+
+.pointsItemText {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  color: $white;
+  max-width: 187px;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 16px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 14px;
+  }
+}
+
+.pointsAnimationCircle {
+  width: 220px;
+  height: 220px;
+  background: url("../../assets/images/circle.png") no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
+
+.pointsAnimationVideo {
+  width: 195px;
+  height: 147px;
+  border-radius: 50%;
+  background: url("../../assets/images/video.png") no-repeat center;
+}
+
+.infoButton {
+  @include media-breakpoint-down(md) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+}
+
+

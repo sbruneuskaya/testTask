@@ -1,0 +1,100 @@
+@import '../../assets/vars/vars';
+@import '../../assets/vars/media';
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 250px;
+  background: transparent;
+
+  @include media-breakpoint-down(xl) {
+    padding: 25px 50px;
+  }
+}
+
+.wrapperContacts,
+.wrapperImg {
+  display: flex;
+}
+
+.wrapperImgMenu {
+  background: url("../../assets/images/burger.png");
+  width: 40px;
+  height: 22px;
+}
+
+.wrapperImgLogo {
+  background: url("../../assets/images/logoHeader.png");
+  width: 197px;
+  height: 30px;
+  margin-left: 80px;
+
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
+
+.wrapperContactsTitle {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: -0.5px;
+  color: $white;
+  opacity: 0.5;
+  margin-bottom: 6px;
+}
+
+.wrapperContactsNumber {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: $white;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 14px;
+  }
+}
+
+.wrapperContactsText {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: -0.5px;
+  color: $yellow;
+  margin-right: 141px;
+}
+
+.wrapperContactsEmailImg {
+  background: url("../../assets/images/mail.png");
+  width: 10px;
+  height: 8px;
+  margin-right: 9.5px;
+}
+
+.wrapperContactsPhoneImg {
+  background: url("../../assets/images/phone.png");
+  width: 11px;
+  height: 11px;
+  margin-right: 7px;
+  margin-bottom: 6px;
+}
+
+.wrapperGroup {
+  display: flex;
+  align-items: center;
+}
+
+.wrapperContactsPhone {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.wrapperContactsEmail{
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
